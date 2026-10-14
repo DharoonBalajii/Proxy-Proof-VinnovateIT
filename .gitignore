@@ -1,0 +1,9 @@
+node_modules/
+.expo/
+*.db
+*.db-wal
+*.db-shm
+ios/
+android/
+dist/
+.DS_Store
