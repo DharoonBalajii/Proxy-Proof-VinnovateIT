@@ -9,6 +9,8 @@
 ![Node](https://img.shields.io/badge/Node-22%2B-339933?logo=nodedotjs&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-built--in-003B57?logo=sqlite&logoColor=white)
 
+<sub>Built by **Dharoon Balajii** for **VinnovateIT Recruitment'26**</sub>
+
 </div>
 
 An organiser starts a session and their phone broadcasts a Bluetooth signal that carries a **code which changes every 10 seconds**. Students' phones pick it up and report to the server, which marks attendance only if every anti-proxy check passes. No taps, no QR codes, no shared passwords.
@@ -219,3 +221,11 @@ app/                   Expo (React Native) app
 - **Relay attacks.** Someone who rebroadcasts the signal to a remote friend inside the 10 second window could still get through. A shorter rotation narrows the window.
 - **The student app must stay open.** iOS does not allow unfiltered Bluetooth scanning in the background.
 - **Demo scope.** Seeded accounts with a shared password, a local SQLite file, no email flows and no production hosting.
+
+---
+
+<div align="center">
+
+Built by **Dharoon Balajii** for **VinnovateIT Recruitment'26**
+
+</div>
