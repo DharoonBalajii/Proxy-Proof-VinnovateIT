@@ -8,7 +8,6 @@
 ![React Native](https://img.shields.io/badge/React%20Native-0.86-2A3BFF?logo=react&logoColor=white)
 ![Node](https://img.shields.io/badge/Node-22%2B-339933?logo=nodedotjs&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-built--in-003B57?logo=sqlite&logoColor=white)
-![Tests](https://img.shields.io/badge/server%20tests-20%20passing-0E9E73)
 
 </div>
 
@@ -25,7 +24,6 @@ An organiser starts a session and their phone broadcasts a Bluetooth signal that
 - [Demo accounts](#demo-accounts)
 - [Real Bluetooth on physical phones](#real-bluetooth-on-physical-phones)
 - [Project structure](#project-structure)
-- [Tests](#tests)
 - [Troubleshooting](#troubleshooting)
 - [Known limitations](#known-limitations)
 
@@ -193,7 +191,6 @@ server/                Node API and live socket
   src/app.js           REST routes and device binding
   src/live.js          WebSocket: token rotation and live marks
   src/seed.js          demo data
-  test/                20 tests
 app/                   Expo (React Native) app
   src/app/             screens: login, student, organiser, admin
   src/components/      pulse ring, cards, buttons, session view
@@ -201,14 +198,6 @@ app/                   Expo (React Native) app
   src/api/             API client and live socket
   patches/             fix for react-native-ble-advertiser on modern Android
 ```
-
-## Tests
-
-```bash
-cd server && npm test
-```
-
-They cover every rule in the table above, token rotation and replay, device switching with admin approval, manual add and remove, role guards, CSV output, history percentages and the live WebSocket events.
 
 ---
 
