@@ -46,11 +46,20 @@
         "react-native-ble-plx",
         {
           "isBackgroundEnabled": false,
-          "modes": ["peripheral", "central"],
+          "modes": [
+            "peripheral",
+            "central"
+          ],
           "bluetoothAlwaysPermission": "ProxyProof uses Bluetooth to detect your class's attendance signal and to broadcast it when you run a session."
         }
+      ],
+      [
+        "expo-build-properties",
+        { "android": { "usesCleartextTraffic": true, "useLegacyPackaging": true } }
       ]
     ],
-    "experiments": { "typedRoutes": false }
+    "experiments": {
+      "typedRoutes": false
+    }
   }
 }

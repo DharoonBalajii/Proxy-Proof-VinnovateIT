@@ -9,6 +9,8 @@
 ![Node](https://img.shields.io/badge/Node-22%2B-339933?logo=nodedotjs&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-built--in-003B57?logo=sqlite&logoColor=white)
 
+[![Download APK](https://img.shields.io/badge/Download-Android%20APK-2A3BFF?style=for-the-badge&logo=android&logoColor=white)](https://github.com/DharoonBalajii/Proxy-Proof-VinnovateIT/releases/latest/download/ProxyProof.apk)
+
 <sub>Built by **Dharoon Balajii** for **VinnovateIT Recruitment'26**</sub>
 
 </div>
@@ -19,6 +21,7 @@ An organiser starts a session and their phone broadcasts a Bluetooth signal that
 
 ## Contents
 
+- [Download the Android app](#download-the-android-app)
 - [Features](#features)
 - [How it works](#how-it-works)
 - [Quick start](#quick-start)
@@ -28,6 +31,21 @@ An organiser starts a session and their phone broadcasts a Bluetooth signal that
 - [Project structure](#project-structure)
 - [Troubleshooting](#troubleshooting)
 - [Known limitations](#known-limitations)
+
+---
+
+## Download the Android app
+
+**[Download ProxyProof.apk](https://github.com/DharoonBalajii/Proxy-Proof-VinnovateIT/releases/latest/download/ProxyProof.apk)** (Android 7.0 or newer, real Bluetooth included). The file is [`ProxyProof.apk`](ProxyProof.apk) in the root of this repo, and also on the [Releases page](https://github.com/DharoonBalajii/Proxy-Proof-VinnovateIT/releases).
+
+1. Open the link on the phone, download the APK and tap it. Allow **Install unknown apps** for your browser or file manager when Android asks.
+2. Start the server on a computer (see [Quick start](#1-start-the-server)) and connect the phone to the **same Wi-Fi**.
+3. In the app, open **Server settings** on the login screen and enter the address the server printed, for example `http://192.168.1.20:4000`.
+4. Sign in with a [demo account](#demo-accounts). For a real test, install it on two phones and follow [Real Bluetooth on physical phones](#real-bluetooth-on-physical-phones).
+
+> The APK is a sideload build signed with a debug key, so Play Protect may warn that it is from an unknown developer. Tap **Install anyway**.
+
+> **Download stuck at 100%?** Chrome scans every APK before it finishes. Wait a few seconds, then check the **Downloads** notification for a *Download anyway* prompt. If it still hangs, use the button above rather than the file view in the repo, or open the [Releases page](https://github.com/DharoonBalajii/Proxy-Proof-VinnovateIT/releases) in another browser.
 
 ---
 
@@ -165,7 +183,7 @@ Reset to a clean demo any time: stop the server, then run `npm run seed` in `ser
 
 ## Real Bluetooth on physical phones
 
-Bluetooth advertising and scanning need native code, so this needs a **development build**, not Expo Go, and it will not work in the simulator, the emulator or the browser.
+Bluetooth advertising and scanning need native code, so this needs the [APK](#download-the-android-app) or a **development build**, not Expo Go, and it will not work in the simulator, the emulator or the browser.
 
 ```bash
 cd app
